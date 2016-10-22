@@ -18,6 +18,7 @@
 		92CC48E71DBBD2BA00CF6839 /* User76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E61DBBD2BA00CF6839 /* User76x76.png */; };
 		92CC48E91DBBD38700CF6839 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E81DBBD38700CF6839 /* Calendar.png */; };
 		92CC48EB1DBBD40900CF6839 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC48EA1DBBD40900CF6839 /* MapViewController.swift */; };
+		92CC48EE1DBBEFCC00CF6839 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92CC48ED1DBBEFCC00CF6839 /* CoreLocation.framework */; };
 		92CE0ED01DBB464E00F025CC /* background_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92CE0ECF1DBB464E00F025CC /* background_1.jpg */; };
 		92CE0ED21DBB484600F025CC /* Tabs 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CE0ED11DBB484600F025CC /* Tabs 12.png */; };
 		92FB7AC61DBBD02800671ADA /* Search76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 92FB7AC51DBBD02800671ADA /* Search76x76.png */; };
@@ -39,6 +40,7 @@
 		92CC48E61DBBD2BA00CF6839 /* User76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User76x76.png; sourceTree = "<group>"; };
 		92CC48E81DBBD38700CF6839 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		92CC48EA1DBBD40900CF6839 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		92CC48ED1DBBEFCC00CF6839 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		92CE0ECF1DBB464E00F025CC /* background_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_1.jpg; sourceTree = "<group>"; };
 		92CE0ED11DBB484600F025CC /* Tabs 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tabs 12.png"; sourceTree = "<group>"; };
 		92FB7AC51DBBD02800671ADA /* Search76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Search76x76.png; sourceTree = "<group>"; };
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CC48EE1DBBEFCC00CF6839 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +65,7 @@
 			children = (
 				92B1538F1DBB04C100EF3F38 /* iHomelessSolution */,
 				92B1538E1DBB04C100EF3F38 /* Products */,
+				92CC48EC1DBBEFCC00CF6839 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +106,14 @@
 				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		92CC48EC1DBBEFCC00CF6839 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92CC48ED1DBBEFCC00CF6839 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		92CE0ED31DBB485B00F025CC /* Assets */ = {
