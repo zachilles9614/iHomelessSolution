@@ -12,6 +12,8 @@
 		92B153961DBB04C100EF3F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153941DBB04C100EF3F38 /* Main.storyboard */; };
 		92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B153971DBB04C100EF3F38 /* Assets.xcassets */; };
 		92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */; };
+		92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */; };
+		92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		92B153971DBB04C100EF3F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B1539A1DBB04C100EF3F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B1539C1DBB04C100EF3F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Client.csv"; sourceTree = "<group>"; };
+		92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Disabilities.csv"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		92B1538F1DBB04C100EF3F38 /* iHomelessSolution */ = {
 			isa = PBXGroup;
 			children = (
+				92B153A21DBB083000EF3F38 /* Data */,
 				92B153901DBB04C100EF3F38 /* AppDelegate.swift */,
 				92B153921DBB04C100EF3F38 /* ViewController.swift */,
 				92B153941DBB04C100EF3F38 /* Main.storyboard */,
@@ -62,6 +67,15 @@
 				92B1539C1DBB04C100EF3F38 /* Info.plist */,
 			);
 			path = iHomelessSolution;
+			sourceTree = "<group>";
+		};
+		92B153A21DBB083000EF3F38 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */,
+				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +139,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */,
+				92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */,
 				92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */,
+				92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */,
 				92B153961DBB04C100EF3F38 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
