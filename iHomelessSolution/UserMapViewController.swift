@@ -1,5 +1,5 @@
 //
-//  MapViewController.swift
+//  UserMapViewController.swift
 //  iHomelessSolution
 //
 //  Created by Zachary Auer on 10/22/16.
@@ -9,15 +9,15 @@
 import UIKit
 import MapKit
 
-class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-
+class UserMapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    
     @IBOutlet var map: MKMapView!
     var locationManager = CLLocationManager()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
@@ -74,44 +74,64 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         annotation4.subtitle = "Homeless Shelter  314-621-4052"
         annotation4.coordinate = coordinates3
         map.addAnnotation(annotation4)
-    
+        
+        
+        let uilpgr = UILongPressGestureRecognizer(target: self, action: #selector(UserMapViewController.longpress(gestureRecognizer:)))
+        
+        uilpgr.minimumPressDuration = 2
+        
+        map.addGestureRecognizer(uilpgr)
+        
     }
-
+    
+    func longpress(gestureRecognizer: UIGestureRecognizer) {
+        let touchPoint = gestureRecognizer.location(in: self.map)
+        
+        let coordinate = map.convert(touchPoint, toCoordinateFrom: self.map)
+        
+        let annotation10 = MKPointAnnotation()
+        
+        annotation10.coordinate = coordinate
+        annotation10.title = "Homeless Sighting"
+        
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-//        var i = 0
-//        let userLocation: CLLocation = locations[0]
-//        
-//        let latitude = userLocation.coordinate.latitude
-//        
-//        let longitude = userLocation.coordinate.longitude
-//        
-//        let latDelta: CLLocationDegrees = 0.025
-//        
-//        let lonDelta: CLLocationDegrees = 0.025
-//        
-//        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
-//        
-//        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-//        
-//        let region = MKCoordinateRegion(center: location, span: span)
-//        if (i == 0) {
-//            self.map.setRegion(region, animated: true)
-//        }
-//        i += 1
+        //        var i = 0
+        //        let userLocation: CLLocation = locations[0]
+        //
+        //        let latitude = userLocation.coordinate.latitude
+        //
+        //        let longitude = userLocation.coordinate.longitude
+        //
+        //        let latDelta: CLLocationDegrees = 0.025
+        //
+        //        let lonDelta: CLLocationDegrees = 0.025
+        //
+        //        let span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+        //
+        //        let location = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        //
+        //        let region = MKCoordinateRegion(center: location, span: span)
+        //        if (i == 0) {
+        //            self.map.setRegion(region, animated: true)
+        //        }
+        //        i += 1
     }
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
