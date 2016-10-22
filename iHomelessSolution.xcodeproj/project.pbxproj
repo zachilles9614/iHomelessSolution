@@ -14,6 +14,8 @@
 		92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */; };
 		92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */; };
 		92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */; };
+		92CE0ED01DBB464E00F025CC /* background_1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 92CE0ECF1DBB464E00F025CC /* background_1.jpg */; };
+		92CE0ED21DBB484600F025CC /* Tabs 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CE0ED11DBB484600F025CC /* Tabs 12.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		92B1539C1DBB04C100EF3F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Client.csv"; sourceTree = "<group>"; };
 		92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Disabilities.csv"; sourceTree = "<group>"; };
+		92CE0ECF1DBB464E00F025CC /* background_1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_1.jpg; sourceTree = "<group>"; };
+		92CE0ED11DBB484600F025CC /* Tabs 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tabs 12.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		92B1538F1DBB04C100EF3F38 /* iHomelessSolution */ = {
 			isa = PBXGroup;
 			children = (
+				92CE0ED31DBB485B00F025CC /* Assets */,
 				92B153A21DBB083000EF3F38 /* Data */,
 				92B153901DBB04C100EF3F38 /* AppDelegate.swift */,
 				92B153921DBB04C100EF3F38 /* ViewController.swift */,
@@ -76,6 +81,15 @@
 				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		92CE0ED31DBB485B00F025CC /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				92CE0ECF1DBB464E00F025CC /* background_1.jpg */,
+				92CE0ED11DBB484600F025CC /* Tabs 12.png */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,8 +153,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */,
+				92CE0ED21DBB484600F025CC /* Tabs 12.png in Resources */,
 				92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */,
 				92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */,
+				92CE0ED01DBB464E00F025CC /* background_1.jpg in Resources */,
 				92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */,
 				92B153961DBB04C100EF3F38 /* Main.storyboard in Resources */,
 			);
@@ -318,6 +334,7 @@
 				92B153A11DBB04C100EF3F38 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
