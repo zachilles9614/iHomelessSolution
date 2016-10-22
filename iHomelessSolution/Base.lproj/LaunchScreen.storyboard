@@ -28,12 +28,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Zachary Auer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4f-DN-CYY">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="126" id="Ki6-W6-7Sh"/>
+                                    <constraint firstAttribute="height" constant="21" id="Ktp-a5-4o8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="irt-8b-j52" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Dya-Ib-J9b"/>
+                            <constraint firstItem="P4f-DN-CYY" firstAttribute="top" secondItem="Snh-5L-ufF" secondAttribute="bottom" constant="8" id="EUo-w3-K4g"/>
                             <constraint firstItem="Snh-5L-ufF" firstAttribute="top" secondItem="irt-8b-j52" secondAttribute="bottom" constant="8" id="ONJ-0J-VsY"/>
                             <constraint firstItem="Snh-5L-ufF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="lcy-Me-bvR"/>
+                            <constraint firstItem="P4f-DN-CYY" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="q2S-c1-hxi"/>
                             <constraint firstItem="irt-8b-j52" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="124" id="xoS-1G-HWf"/>
                         </constraints>
                     </view>
