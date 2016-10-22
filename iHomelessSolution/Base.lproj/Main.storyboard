@@ -18,9 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="playback" fixedFrame="YES" image="background_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pX7-jp-v4S">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" semanticContentAttribute="playback" ambiguous="YES" misplaced="YES" image="background_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="pX7-jp-v4S">
                                 <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" image="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -52,16 +51,33 @@
                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
+                            <view clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bIj-g7-8z5">
+                                <frame key="frameInset" minX="138" minY="374" width="99" height="34"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bL-mD-T2S">
+                                        <frame key="frameInset" minX="8" minY="2" width="83" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Submit"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.058499924838542938" green="0.89166480302810669" blue="0.62900912761688232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.053935788571834564" green="0.57123869657516479" blue="0.96985870599746704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.37093287706375122" green="0.91061848402023315" blue="0.68909990787506104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="pX7-jp-v4S" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="BA9-xy-KEO"/>
+                            <constraint firstItem="bIj-g7-8z5" firstAttribute="top" secondItem="e2X-KF-tIi" secondAttribute="bottom" constant="26" id="BEq-L6-73m"/>
                             <constraint firstItem="EA3-cQ-H1a" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CsW-ih-719"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pX7-jp-v4S" secondAttribute="bottom" id="OvF-r8-NkX"/>
                             <constraint firstItem="6ft-Dm-dhz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ud1-Ii-R0D"/>
                             <constraint firstItem="6ft-Dm-dhz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="260" id="aoh-9V-Adq"/>
                             <constraint firstItem="e2X-KF-tIi" firstAttribute="top" secondItem="6ft-Dm-dhz" secondAttribute="bottom" constant="8" id="dKQ-8N-gUt"/>
                             <constraint firstItem="EA3-cQ-H1a" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="eew-k5-5f0"/>
                             <constraint firstItem="e2X-KF-tIi" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lv6-me-FoY"/>
+                            <constraint firstItem="bIj-g7-8z5" firstAttribute="centerX" secondItem="pX7-jp-v4S" secondAttribute="centerX" id="oOS-fy-UVy"/>
                         </constraints>
                         <variation key="displayGamut=P3-heightClass=regular-widthClass=compact">
                             <color key="backgroundColor" red="0.37093287706375122" green="0.91061848402023315" blue="0.68909990787506104" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
