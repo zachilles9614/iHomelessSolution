@@ -74,6 +74,25 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         annotation4.subtitle = "Homeless Shelter  314-621-4052"
         annotation4.coordinate = coordinates3
         map.addAnnotation(annotation4)
+        
+        
+        let latitude5: CLLocationDegrees = 38.6186934
+        let longitude5: CLLocationDegrees = -90.2322516
+        let coordinates4 = CLLocationCoordinate2D(latitude: latitude5, longitude: longitude5)
+        let annotation5 = MKPointAnnotation()
+        annotation5.title = "Almost Home"
+        annotation5.subtitle = "Homeless Shelter  314-771-4663"
+        annotation5.coordinate = coordinates4
+        map.addAnnotation(annotation5)
+        
+        let latitude6: CLLocationDegrees = 38.6322361
+        let longitude6: CLLocationDegrees = -90.2123286
+        let coordinates5 = CLLocationCoordinate2D(latitude: latitude6, longitude: longitude6)
+        let annotation6 = MKPointAnnotation()
+        annotation6.title = "Horizon Club"
+        annotation6.subtitle = "Homeless Shelter  314-436-1733"
+        annotation6.coordinate = coordinates5
+        map.addAnnotation(annotation6)
     
     }
 
