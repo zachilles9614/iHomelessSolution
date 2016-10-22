@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		923C1F131DBB708D005935B5 /* userdata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */; };
 		92B153911DBB04C100EF3F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153901DBB04C100EF3F38 /* AppDelegate.swift */; };
 		92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153921DBB04C100EF3F38 /* ViewController.swift */; };
 		92B153961DBB04C100EF3F38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153941DBB04C100EF3F38 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		923C1F121DBB708D005935B5 /* userdata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userdata.xcdatamodel; sourceTree = "<group>"; };
 		92B1538D1DBB04C100EF3F38 /* iHomelessSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHomelessSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B153901DBB04C100EF3F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B153921DBB04C100EF3F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				92B153971DBB04C100EF3F38 /* Assets.xcassets */,
 				92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */,
 				92B1539C1DBB04C100EF3F38 /* Info.plist */,
+				923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */,
 			);
 			path = iHomelessSolution;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */,
+				923C1F131DBB708D005935B5 /* userdata.xcdatamodeld in Sources */,
 				92B153911DBB04C100EF3F38 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +341,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				923C1F121DBB708D005935B5 /* userdata.xcdatamodel */,
+			);
+			currentVersion = 923C1F121DBB708D005935B5 /* userdata.xcdatamodel */;
+			path = userdata.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 92B153851DBB04C000EF3F38 /* Project object */;
 }

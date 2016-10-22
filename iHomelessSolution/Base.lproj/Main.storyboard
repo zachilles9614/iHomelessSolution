@@ -206,12 +206,9 @@
                             </button>
                             <view clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" translatesAutoresizingMaskIntoConstraints="NO" id="asG-oD-cDN">
                                 <subviews>
-                                    <button contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGQ-0m-avM">
+                                    <button contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qGQ-0m-avM">
                                         <frame key="frameInset" minX="8" minY="2" width="83" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="83" id="Tsm-M6-fgL"/>
-                                            <constraint firstAttribute="height" constant="30" id="m3v-JS-9fD"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <state key="normal" title="Submit"/>
                                     </button>
@@ -256,6 +253,6 @@
         <image name="background_1.jpg" width="640" height="1136"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="GQw-an-bPo"/>
+        <segue reference="qde-VI-8bK"/>
     </inferredMetricsTieBreakers>
 </document>
