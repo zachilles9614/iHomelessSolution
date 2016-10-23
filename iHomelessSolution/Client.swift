@@ -170,38 +170,15 @@ class Client {
     }
     
     
-    init(uuid: String, firstName: String, middleName: String, lastName: String, nameDataQuality: String, dob: String, ssn: String, ssnDataQuality: String, dobDataQuality: String, amIndAKNative: String, asian: String, black: String, nativeHIOtherPacific: String, white: String, raceNone: String, gender: String, veteranStatus: String, yearEnteredService: String, yearSeparated: String, worldWarII: String, koreanWar: String, desertStorm: String, afghanistanOEF: String, iraqOIF: String, iraqOND: String, otherTheater: String, militaryBranch: String, dischargeStatus: String, dateCreated: String, dateUpdated: String, userID: String ) {
+    init(uuid: String, firstName: String, middleName: String, lastName: String, dob: String, ssn: String, gender: String, userID: String ) {
         self._UUID = uuid
         self._firstName = firstName
         self._middleName = middleName
         self._lastName = lastName
-        self._nameDataQuality = nameDataQuality
         self._ssn = ssn
-        self._ssnDataQuality = ssnDataQuality
         self._dob = dob
-        self._dobDataQuality = dobDataQuality
-        self._amIndAKNative = amIndAKNative
-        self._asian = asian
-        self._black = black
-        self._nativeHIOtherPacific = nativeHIOtherPacific
-        self._white = white
-        self._raceNone = raceNone
         self._gender = gender
-        self._veteranStatus = veteranStatus
         self._userID = userID
-        self._yearEnteredService = yearEnteredService
-        self._yearSeparated = yearSeparated
-        self._worldWarII = worldWarII
-        self._koreanWar = koreanWar
-        self._desertStorm = desertStorm
-        self._afghanistanOEF = afghanistanOEF
-        self._iraqOIF = iraqOIF
-        self._iraqOND = iraqOND
-        self._otherTheater = otherTheater
-        self._militaryBranch = militaryBranch
-        self._discharge_status = dischargeStatus
-        self._dateCreated = dateCreated
-        self._dateUpdated = dateUpdated
         self._userID = userID
     }
     
