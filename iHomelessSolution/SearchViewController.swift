@@ -8,16 +8,48 @@
 
 import UIKit
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
 
+    
+    @IBOutlet weak var collection: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collection.delegate = self
+        collection.dataSource = self
         // Do any additional setup after loading the view.
         parseClientCSV()
         
     }
 
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClientCell", for: indexPath) as? ClientCell {
+            return cell
+        } else {
+            return UICollectionViewCell()
+        }
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 30
+    }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    //func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+    
+        //return CGSizeMake(105, 105)
+    //}
+
+    
     
     func parseClientCSV() {
         let path = Bundle.main.path(forResource: "Client", ofType: "csv")!

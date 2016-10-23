@@ -15,6 +15,7 @@
 		926874211DBC5CA10070C4F5 /* Client.csv in Resources */ = {isa = PBXBuildFile; fileRef = 926874201DBC5CA10070C4F5 /* Client.csv */; };
 		926874231DBC6FD50070C4F5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926874221DBC6FD50070C4F5 /* SearchViewController.swift */; };
 		926874251DBC74BE0070C4F5 /* folder76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 926874241DBC74BE0070C4F5 /* folder76x76.png */; };
+		926874271DBC861F0070C4F5 /* ClientCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926874261DBC861F0070C4F5 /* ClientCell.swift */; };
 		92B153911DBB04C100EF3F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153901DBB04C100EF3F38 /* AppDelegate.swift */; };
 		92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153921DBB04C100EF3F38 /* ViewController.swift */; };
 		92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B153971DBB04C100EF3F38 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		926874201DBC5CA10070C4F5 /* Client.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Client.csv; sourceTree = "<group>"; };
 		926874221DBC6FD50070C4F5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		926874241DBC74BE0070C4F5 /* folder76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder76x76.png; path = "../../assets1/Custom Design 1/icons/folder/folder76x76.png"; sourceTree = "<group>"; };
+		926874261DBC861F0070C4F5 /* ClientCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientCell.swift; sourceTree = "<group>"; };
 		92B1538D1DBB04C100EF3F38 /* iHomelessSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHomelessSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B153901DBB04C100EF3F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B153921DBB04C100EF3F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */,
+				926874261DBC861F0070C4F5 /* ClientCell.swift */,
 				926874141DBC48840070C4F5 /* Main.storyboard */,
 			);
 			name = View;
@@ -257,6 +260,7 @@
 			files = (
 				926874171DBC52C80070C4F5 /* csv.swift in Sources */,
 				9268741F1DBC588E0070C4F5 /* Client.swift in Sources */,
+				926874271DBC861F0070C4F5 /* ClientCell.swift in Sources */,
 				926874231DBC6FD50070C4F5 /* SearchViewController.swift in Sources */,
 				92CC48F21DBBFBE800CF6839 /* UserMapViewController.swift in Sources */,
 				92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */,
