@@ -10,6 +10,8 @@
 		923C1F131DBB708D005935B5 /* userdata.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */; };
 		926874131DBC202D0070C4F5 /* Location76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 926874121DBC202D0070C4F5 /* Location76x76.png */; };
 		926874151DBC48840070C4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926874141DBC48840070C4F5 /* Main.storyboard */; };
+		926874171DBC52C80070C4F5 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926874161DBC52C80070C4F5 /* csv.swift */; };
+		9268741F1DBC588E0070C4F5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268741E1DBC588E0070C4F5 /* Client.swift */; };
 		92B153911DBB04C100EF3F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153901DBB04C100EF3F38 /* AppDelegate.swift */; };
 		92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153921DBB04C100EF3F38 /* ViewController.swift */; };
 		92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B153971DBB04C100EF3F38 /* Assets.xcassets */; };
@@ -32,6 +34,8 @@
 		923C1F121DBB708D005935B5 /* userdata.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = userdata.xcdatamodel; sourceTree = "<group>"; };
 		926874121DBC202D0070C4F5 /* Location76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Location76x76.png; path = "../../assets1/Custom Design 1/icons/location/Location76x76.png"; sourceTree = "<group>"; };
 		926874141DBC48840070C4F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
+		926874161DBC52C80070C4F5 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		9268741E1DBC588E0070C4F5 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		92B1538D1DBB04C100EF3F38 /* iHomelessSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHomelessSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B153901DBB04C100EF3F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B153921DBB04C100EF3F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		926874181DBC55630070C4F5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				926874161DBC52C80070C4F5 /* csv.swift */,
+				92B153901DBB04C100EF3F38 /* AppDelegate.swift */,
+				92B1539C1DBB04C100EF3F38 /* Info.plist */,
+				923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		9268741A1DBC55BA0070C4F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */,
+				926874141DBC48840070C4F5 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9268741B1DBC55BF0070C4F5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				92B153921DBB04C100EF3F38 /* ViewController.swift */,
+				92CC48EA1DBBD40900CF6839 /* MapViewController.swift */,
+				92CC48F11DBBFBE800CF6839 /* UserMapViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9268741C1DBC56130070C4F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */,
+				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9268741D1DBC58700070C4F5 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				9268741E1DBC588E0070C4F5 /* Client.swift */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
 		92B153841DBB04C000EF3F38 = {
 			isa = PBXGroup;
 			children = (
@@ -84,34 +135,14 @@
 		92B1538F1DBB04C100EF3F38 /* iHomelessSolution */ = {
 			isa = PBXGroup;
 			children = (
+				9268741D1DBC58700070C4F5 /* New Group */,
+				9268741A1DBC55BA0070C4F5 /* View */,
+				9268741B1DBC55BF0070C4F5 /* Controller */,
+				926874181DBC55630070C4F5 /* Util */,
 				92CE0ED31DBB485B00F025CC /* Assets */,
-				92B153A21DBB083000EF3F38 /* Data */,
-				92B153901DBB04C100EF3F38 /* AppDelegate.swift */,
-				92B153921DBB04C100EF3F38 /* ViewController.swift */,
-				92CC48EA1DBBD40900CF6839 /* MapViewController.swift */,
-				92CC48F11DBBFBE800CF6839 /* UserMapViewController.swift */,
-				92B153971DBB04C100EF3F38 /* Assets.xcassets */,
-				92FB7AC51DBBD02800671ADA /* Search76x76.png */,
-				926874141DBC48840070C4F5 /* Main.storyboard */,
-				92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */,
-				92FB7ACB1DBBD0D100671ADA /* Call76x76.png */,
-				926874121DBC202D0070C4F5 /* Location76x76.png */,
-				92CC48E61DBBD2BA00CF6839 /* User76x76.png */,
-				92CC48E81DBBD38700CF6839 /* Calendar.png */,
-				92FB7AC91DBBD08B00671ADA /* Maps76x76.png */,
-				92B1539C1DBB04C100EF3F38 /* Info.plist */,
-				923C1F111DBB708D005935B5 /* userdata.xcdatamodeld */,
+				9268741C1DBC56130070C4F5 /* Resources */,
 			);
 			path = iHomelessSolution;
-			sourceTree = "<group>";
-		};
-		92B153A21DBB083000EF3F38 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */,
-				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
-			);
-			name = Data;
 			sourceTree = "<group>";
 		};
 		92CC48EC1DBBEFCC00CF6839 /* Frameworks */ = {
@@ -126,6 +157,13 @@
 			isa = PBXGroup;
 			children = (
 				92CE0ECF1DBB464E00F025CC /* background_1.jpg */,
+				92B153971DBB04C100EF3F38 /* Assets.xcassets */,
+				92FB7ACB1DBBD0D100671ADA /* Call76x76.png */,
+				92FB7AC51DBBD02800671ADA /* Search76x76.png */,
+				926874121DBC202D0070C4F5 /* Location76x76.png */,
+				92CC48E81DBBD38700CF6839 /* Calendar.png */,
+				92CC48E61DBBD2BA00CF6839 /* User76x76.png */,
+				92FB7AC91DBBD08B00671ADA /* Maps76x76.png */,
 				92CE0ED11DBB484600F025CC /* Tabs 12.png */,
 			);
 			name = Assets;
@@ -214,6 +252,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				926874171DBC52C80070C4F5 /* csv.swift in Sources */,
+				9268741F1DBC588E0070C4F5 /* Client.swift in Sources */,
 				92CC48F21DBBFBE800CF6839 /* UserMapViewController.swift in Sources */,
 				92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */,
 				923C1F131DBB708D005935B5 /* userdata.xcdatamodeld in Sources */,
