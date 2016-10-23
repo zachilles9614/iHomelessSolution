@@ -12,12 +12,11 @@
 		926874151DBC48840070C4F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926874141DBC48840070C4F5 /* Main.storyboard */; };
 		926874171DBC52C80070C4F5 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 926874161DBC52C80070C4F5 /* csv.swift */; };
 		9268741F1DBC588E0070C4F5 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9268741E1DBC588E0070C4F5 /* Client.swift */; };
+		926874211DBC5CA10070C4F5 /* Client.csv in Resources */ = {isa = PBXBuildFile; fileRef = 926874201DBC5CA10070C4F5 /* Client.csv */; };
 		92B153911DBB04C100EF3F38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153901DBB04C100EF3F38 /* AppDelegate.swift */; };
 		92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153921DBB04C100EF3F38 /* ViewController.swift */; };
 		92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B153971DBB04C100EF3F38 /* Assets.xcassets */; };
 		92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */; };
-		92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */; };
-		92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */ = {isa = PBXBuildFile; fileRef = 92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */; };
 		92CC48E71DBBD2BA00CF6839 /* User76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E61DBBD2BA00CF6839 /* User76x76.png */; };
 		92CC48E91DBBD38700CF6839 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E81DBBD38700CF6839 /* Calendar.png */; };
 		92CC48EB1DBBD40900CF6839 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC48EA1DBBD40900CF6839 /* MapViewController.swift */; };
@@ -36,14 +35,13 @@
 		926874141DBC48840070C4F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		926874161DBC52C80070C4F5 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
 		9268741E1DBC588E0070C4F5 /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		926874201DBC5CA10070C4F5 /* Client.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Client.csv; sourceTree = "<group>"; };
 		92B1538D1DBB04C100EF3F38 /* iHomelessSolution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iHomelessSolution.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92B153901DBB04C100EF3F38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92B153921DBB04C100EF3F38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92B153971DBB04C100EF3F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B1539A1DBB04C100EF3F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B1539C1DBB04C100EF3F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Client.csv"; sourceTree = "<group>"; };
-		92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Homeless Data - Disabilities.csv"; sourceTree = "<group>"; };
 		92CC48E61DBBD2BA00CF6839 /* User76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User76x76.png; sourceTree = "<group>"; };
 		92CC48E81DBBD38700CF6839 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		92CC48EA1DBBD40900CF6839 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +99,7 @@
 		9268741C1DBC56130070C4F5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				92B153A51DBB085200EF3F38 /* Homeless Data - Disabilities.csv */,
-				92B153A31DBB084400EF3F38 /* Homeless Data - Client.csv */,
+				926874201DBC5CA10070C4F5 /* Client.csv */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -234,12 +231,11 @@
 				92CE0ED21DBB484600F025CC /* Tabs 12.png in Resources */,
 				92FB7AC61DBBD02800671ADA /* Search76x76.png in Resources */,
 				926874131DBC202D0070C4F5 /* Location76x76.png in Resources */,
-				92B153A61DBB085200EF3F38 /* Homeless Data - Disabilities.csv in Resources */,
 				92FB7ACA1DBBD08B00671ADA /* Maps76x76.png in Resources */,
 				926874151DBC48840070C4F5 /* Main.storyboard in Resources */,
 				92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */,
 				92CE0ED01DBB464E00F025CC /* background_1.jpg in Resources */,
-				92B153A41DBB084400EF3F38 /* Homeless Data - Client.csv in Resources */,
+				926874211DBC5CA10070C4F5 /* Client.csv in Resources */,
 				92CC48E91DBBD38700CF6839 /* Calendar.png in Resources */,
 				92CC48E71DBBD2BA00CF6839 /* User76x76.png in Resources */,
 			);
