@@ -65,6 +65,116 @@
             endingLineNumber = "15"
             landmarkName = "SearchViewController"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.collection.getter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498908604.540242"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "27">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.collection.setter : weak Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.UICollectionView&gt;"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498908604.542293"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "42">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.init (nibName : Swift.Optional&lt;Swift.String&gt;, bundle : Swift.Optional&lt;__ObjC.Bundle&gt;) -&gt; iHomelessSolution.SearchViewController"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498908604.544388"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.init (coder : __ObjC.NSCoder) -&gt; Swift.Optional&lt;iHomelessSolution.SearchViewController&gt;"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498908604.547584"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "54">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "iHomelessSolution/SearchViewController.swift"
+            timestampString = "498909336.682472"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "prepare(for:sender:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498909336.698232"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "iHomelessSolution.SearchViewController.prepare (for : __ObjC.UIStoryboardSegue, sender : Swift.Optional&lt;Any&gt;) -&gt; ()"
+                  moduleName = "iHomelessSolution"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Zach/Desktop/iHomelessSolution/iHomelessSolution/SearchViewController.swift"
+                  timestampString = "498909336.701856"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "700">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

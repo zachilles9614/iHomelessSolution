@@ -45,127 +45,220 @@ class Client {
     private var _userID: String!
     
     var uuid: String {
+        if _UUID == nil {
+            _UUID == ""
+        }
         return _UUID
     }
     
     var firstName: String {
+        if _firstName == nil {
+            _firstName == ""
+        }
         return _firstName
     }
     
     var middleName: String {
+        if _middleName == nil {
+            _middleName == ""
+        }
         return _middleName
     }
     
     var lastName: String {
+        if _lastName == nil {
+            _lastName == ""
+        }
         return _lastName
     }
     
     var dob: String {
+        if _dob == nil {
+            _dob == ""
+        }
         return _dob
     }
     
     var ssn: String {
+        if _ssn == nil {
+            _ssn == ""
+        }
         return _ssn
     }
     
     var userID: String {
+        if _userID == nil {
+            _userID == ""
+        }
         return _userID
     }
     
     var nameDataQuality: String {
+        if _nameDataQuality == nil {
+            _nameDataQuality == ""
+        }
         return _nameDataQuality
     }
     
     var ssnDataQuality: String {
+        if _ssnDataQuality == nil {
+            _ssnDataQuality == ""
+        }
         return _ssnDataQuality
     }
     
     var dobDataQuality: String {
-        return _ssnDataQuality
+        if _dobDataQuality == nil {
+            _dobDataQuality == ""
+        }
+        return _dobDataQuality
     }
     
     var amIndAKNative: String {
+        if _amIndAKNative == nil {
+            _amIndAKNative == ""
+        }
         return _amIndAKNative
     }
     
     var asian: String {
+        if _asian == nil {
+            _asian == ""
+        }
         return _asian
     }
     
     
     var black: String {
+        if _black == nil {
+            _black == ""
+        }
         return _black
     }
     
     var nativeHIOtherPacific: String {
+        if _nativeHIOtherPacific == nil {
+            _nativeHIOtherPacific == ""
+        }
         return _nativeHIOtherPacific
     }
     
     var white: String {
+        if _white == nil {
+            _white == ""
+        }
         return _white
     }
     
     var raceNone: String {
+        if _raceNone == nil {
+            _raceNone == ""
+        }
         return _raceNone
     }
     
     var gender: String {
+        if _gender == nil {
+            _gender == ""
+        }
         return _gender
     }
     
     var veteranStatus: String {
+        if _veteranStatus == nil {
+            _veteranStatus == ""
+        }
         return _veteranStatus
     }
     
     var yearEnteredService: String {
+        if _yearEnteredService == nil {
+            _yearEnteredService == ""
+        }
         return _yearEnteredService
     }
     
     var yearSeparated: String {
+        if _yearSeparated == nil {
+            _yearSeparated == ""
+        }
         return _yearSeparated
     }
     
     var worldWarII: String {
+        if _worldWarII == nil {
+            _worldWarII == ""
+        }
         return _worldWarII
     }
     
     var koreanWar: String {
+        if _koreanWar == nil {
+            _koreanWar == ""
+        }
         return _koreanWar
     }
     
     var desertStorm: String {
+        if _desertStorm == nil {
+            _desertStorm == ""
+        }
         return _desertStorm
     }
     
     var afghanistanOEF: String {
+        if _afghanistanOEF == nil {
+            _afghanistanOEF == ""
+        }
         return _afghanistanOEF
     }
     
     var iraqOIF: String {
+        if _iraqOIF == nil {
+            _iraqOIF == ""
+        }
         return _iraqOIF
     }
     
     var iraqOND: String {
+        if _iraqOND == nil {
+            _iraqOND == ""
+        }
         return _iraqOND
     }
     
     var otherTheater: String {
+        if _otherTheater == nil {
+            _otherTheater == ""
+        }
         return _otherTheater
     }
     
     var militaryBranch: String {
+        if _militaryBranch == nil {
+            _militaryBranch == ""
+        }
         return _militaryBranch
     }
     
     var dischargeStatus: String {
+        if _discharge_status == nil {
+            _discharge_status == ""
+        }
         return _discharge_status
     }
     
     var dateCreated: String {
+        if _dateCreated == nil {
+            _dateCreated == ""
+        }
         return _dateCreated
     }
     
     var dateUpdated: String {
+        if _dateUpdated == nil {
+            _dateUpdated == ""
+        }
         return _dateUpdated
     }
     

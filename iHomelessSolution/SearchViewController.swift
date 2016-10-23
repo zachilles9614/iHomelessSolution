@@ -57,11 +57,11 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
             
             
             if inSearchMode {
-               var people = filteredClients[indexPath.row]
+               let people = filteredClients[indexPath.row]
                 cell.configureCell(client: people)
             } else {
-               var people2 = client[indexPath.row]
-                cell.configureCell(client: people2)
+               let people = client[indexPath.row]
+                cell.configureCell(client: people)
             }
             
             return cell
@@ -77,10 +77,10 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         
         if inSearchMode {
-            var people = filteredClients[indexPath.row]
+            let people = filteredClients[indexPath.row]
             performSegue(withIdentifier: "ClientDetailVC", sender: people)
         } else {
-            var people = client[indexPath.row]
+            let people = client[indexPath.row]
              performSegue(withIdentifier: "ClientDetailVC", sender: people)
         }
         
@@ -88,17 +88,17 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     
-//   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == "ClientDetailVC" {
-//            if let detailsVC = segue.destination as? ClientDetailVC {
-//                if let people = sender as? Client {
-//                    detailsVC.client = people
-//                
-//                }
-//            }
-//        }
-//    }
-//    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       if segue.identifier == "ClientDetailVC" {
+            if let detailsVC = segue.destination as? ClientDetailVC {
+                if let people = sender as? Client {
+                    detailsVC.client = people
+
+                }
+            }
+       }
+    }
+    
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if inSearchMode {
