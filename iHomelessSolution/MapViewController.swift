@@ -30,8 +30,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         let latitude: CLLocationDegrees = 38.6360862
         let longitude: CLLocationDegrees = -90.2326524
-        let latDelta: CLLocationDegrees = 0.50
-        let lonDelta: CLLocationDegrees = 0.50
+        let latDelta: CLLocationDegrees = 0.25
+        let lonDelta: CLLocationDegrees = 0.25
         let span: MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
         let location: CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         let region: MKCoordinateRegion = MKCoordinateRegion(center: location, span: span)
