@@ -23,7 +23,7 @@ class ClientCell: UICollectionViewCell {
     func configureCell(client: Client) {
         self.client = client
         
-        nameLbl.text = self.client.firstName + " " + self.client.lastName
+        nameLbl.text = self.client.lastName
         thumbImg.image = UIImage(named: "folder76x76.png")
     }
     

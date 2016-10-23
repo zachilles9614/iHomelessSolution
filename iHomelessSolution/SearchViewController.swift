@@ -8,36 +8,104 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate{
+class SearchViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate {
 
+    @IBOutlet var searchBar: UISearchBar!
     
     @IBOutlet weak var collection: UICollectionView!
-    
+    var client = [Client]()
+    var filteredClients = [Client]()
+    var inSearchMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         collection.delegate = self
         collection.dataSource = self
+        searchBar.delegate = self
+        searchBar.returnKeyType = UIReturnKeyType.done
+        
         // Do any additional setup after loading the view.
         parseClientCSV()
         
     }
 
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        view.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        if searchBar.text == nil || searchBar.text == "" {
+            inSearchMode = false
+            view.endEditing(true)
+            collection.reloadData()
+        } else {
+            inSearchMode = true
+            let lower = searchBar.text!.lowercased()
+            filteredClients = client.filter({$0.lastName.range(of: lower) != nil})
+            collection.reloadData()
+        }
+        
+    }
+    
+    
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ClientCell", for: indexPath) as? ClientCell {
+            
+            
+            
+            if inSearchMode {
+               var people = filteredClients[indexPath.row]
+                cell.configureCell(client: people)
+            } else {
+               var people2 = client[indexPath.row]
+                cell.configureCell(client: people2)
+            }
+            
             return cell
+            
         } else {
             return UICollectionViewCell()
         }
     }
     
+    
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        
+        if inSearchMode {
+            var people = filteredClients[indexPath.row]
+        } else {
+            var people = client[indexPath.row]
+        }
+        
+//        //performSegue(withIdentifier: "ClientDetailVC", sender: people) {
+//        
+//            
+//        }
     }
     
+    
+//   // override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "ClientDetailVC" {
+//            if let detailsVC = segue.destination as? ClientDetailVC {
+//                if let people = sender as? Client {
+//                    detailsVC.client = people
+//                
+//                }
+//            }
+//        }
+//    }
+//    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        if inSearchMode {
+            return filteredClients.count
+        }
+        return client.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -74,6 +142,7 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
                 
                 let person = Client(uuid: (uuid)!, firstName: (firstName)!, middleName: (middleName)!, lastName: (lastName)!, dob: (dob)!, ssn: (ssn)!, gender: (gender)!, userID: (userID)!)
                 
+                client.append(person)
             }
             
         } catch {

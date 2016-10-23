@@ -20,6 +20,7 @@
 		92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B153921DBB04C100EF3F38 /* ViewController.swift */; };
 		92B153981DBB04C100EF3F38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B153971DBB04C100EF3F38 /* Assets.xcassets */; };
 		92B1539B1DBB04C100EF3F38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B153991DBB04C100EF3F38 /* LaunchScreen.storyboard */; };
+		92B8C25E1DBCA386007108A6 /* ClientDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B8C25D1DBCA386007108A6 /* ClientDetailVC.swift */; };
 		92CC48E71DBBD2BA00CF6839 /* User76x76.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E61DBBD2BA00CF6839 /* User76x76.png */; };
 		92CC48E91DBBD38700CF6839 /* Calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = 92CC48E81DBBD38700CF6839 /* Calendar.png */; };
 		92CC48EB1DBBD40900CF6839 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CC48EA1DBBD40900CF6839 /* MapViewController.swift */; };
@@ -48,6 +49,7 @@
 		92B153971DBB04C100EF3F38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92B1539A1DBB04C100EF3F38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92B1539C1DBB04C100EF3F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B8C25D1DBCA386007108A6 /* ClientDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientDetailVC.swift; sourceTree = "<group>"; };
 		92CC48E61DBBD2BA00CF6839 /* User76x76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = User76x76.png; sourceTree = "<group>"; };
 		92CC48E81DBBD38700CF6839 /* Calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Calendar.png; sourceTree = "<group>"; };
 		92CC48EA1DBBD40900CF6839 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		9268741B1DBC55BF0070C4F5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				92B8C25D1DBCA386007108A6 /* ClientDetailVC.swift */,
 				92B153921DBB04C100EF3F38 /* ViewController.swift */,
 				926874221DBC6FD50070C4F5 /* SearchViewController.swift */,
 				92CC48EA1DBBD40900CF6839 /* MapViewController.swift */,
@@ -262,6 +265,7 @@
 				9268741F1DBC588E0070C4F5 /* Client.swift in Sources */,
 				926874271DBC861F0070C4F5 /* ClientCell.swift in Sources */,
 				926874231DBC6FD50070C4F5 /* SearchViewController.swift in Sources */,
+				92B8C25E1DBCA386007108A6 /* ClientDetailVC.swift in Sources */,
 				92CC48F21DBBFBE800CF6839 /* UserMapViewController.swift in Sources */,
 				92B153931DBB04C100EF3F38 /* ViewController.swift in Sources */,
 				923C1F131DBB708D005935B5 /* userdata.xcdatamodeld in Sources */,
