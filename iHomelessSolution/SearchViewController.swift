@@ -78,14 +78,13 @@ class SearchViewController: UIViewController, UICollectionViewDataSource, UIColl
         
         if inSearchMode {
             var people = filteredClients[indexPath.row]
+            performSegue(withIdentifier: "ClientDetailVC", sender: people)
         } else {
             var people = client[indexPath.row]
+             performSegue(withIdentifier: "ClientDetailVC", sender: people)
         }
         
-//        //performSegue(withIdentifier: "ClientDetailVC", sender: people) {
-//        
-//            
-//        }
+      
     }
     
     
