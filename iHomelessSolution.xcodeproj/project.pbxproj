@@ -74,6 +74,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		923F21921DBCF7C50012C10A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9268741E1DBC588E0070C4F5 /* Client.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		926874181DBC55630070C4F5 /* Util */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,14 +123,6 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		9268741D1DBC58700070C4F5 /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-				9268741E1DBC588E0070C4F5 /* Client.swift */,
-			);
-			name = "New Group";
-			sourceTree = "<group>";
-		};
 		92B153841DBB04C000EF3F38 = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +143,7 @@
 		92B1538F1DBB04C100EF3F38 /* iHomelessSolution */ = {
 			isa = PBXGroup;
 			children = (
-				9268741D1DBC58700070C4F5 /* New Group */,
+				923F21921DBCF7C50012C10A /* Model */,
 				9268741A1DBC55BA0070C4F5 /* View */,
 				9268741B1DBC55BF0070C4F5 /* Controller */,
 				926874181DBC55630070C4F5 /* Util */,
